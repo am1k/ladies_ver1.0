@@ -657,7 +657,7 @@ body {
     margin: 5px 0 0 7px;
 }
 .rating-ladies {
-    float: right;
+    float: left;
     background: url("img/lady-members-heart.png");
     background-repeat: no-repeat;
     background-position: 100% 100%;
