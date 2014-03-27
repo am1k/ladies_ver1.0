@@ -114,8 +114,12 @@
     <script>
         $(document).ready(function(){
             $('.carousel').bxSlider({
-                pagerCustom: '#bx-pager'
-            });
+                pagerCustom: '#bx-pager',
+                mode: 'fade',
+                captions: true,
+                auto: true,
+                speed: 3000
+        });
         });
     </script>
     <script>
@@ -182,16 +186,16 @@
             <form class="registration-field">
                 <div class="row">
                     <label for="registr-name">Name:</label>
-                    <input type="text" name="name" id="registr-name" class="txt" placeholder="Viktoria" required>
+                    <input type="text" name="name" maxlength="20" id="registr-name" class="txt" placeholder="Viktoria" required>
                 </div>
 
                 <div class="row">
                     <label for="email-enter">Email:</label>
-                    <input type="email" name="email" id="email-enter"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" id="email-enter"  placeholder="Viktoria@gmail.com" required>
                 </div>
                 <div class="row">
                     <ul>
-                        <li><input type="checkbox" id="check" checked><label for="check">I agree with</label></li>
+                        <li><input type="checkbox" maxlength="20" id="check" checked><label for="check">I agree with</label></li>
                         <li><a href="javascript: void(0)">License agreement</a></li>
                     </ul>
                 </div>
@@ -207,16 +211,16 @@
             <form class="registration-field">
                 <div class="row">
                     <label for="email-registration">Email:</label>
-                    <input type="email" name="" id="email-registration"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" id="email-registration"  placeholder="Viktoria@gmail.com" required>
                 </div>
 
                 <div class="row">
                     <label for="registr-password">Password:</label>
-                    <input type="password" name="email" id="registr-password" class="txt" placeholder="Your password" required>
+                    <input type="password" name="password" maxlength="20" id="registr-password" class="txt" placeholder="Your password" required>
                 </div>
                 <div class="row">
                     <ul>
-                        <li><input type="checkbox" id="check-igree" checked><label for="check-igree">I agree with</label></li>
+                        <li><input type="checkbox" maxlength="20" id="check-igree" checked><label for="check-igree">I agree with</label></li>
                     </ul>
                 </div>
             <button type="submit" class="reg-facebook">Login with Facebook</button>
@@ -1082,15 +1086,15 @@
     <form class="popup-form-registration-for-girl">
         <div class="popup-row">
             <label for="name-girl">Имя:</label>
-            <input type="text" name="name" id="name-girl" class="txt"  required>
+            <input type="text" maxlength="20" name="name" id="name-girl" class="txt"  required>
         </div>
         <div class="popup-row-mail">
             <label for="email-girl">Электронная почта:</label>
-            <input type="email" name="name" id="email-girl" class="txt" required>
+            <input type="email" maxlength="20" name="name" id="email-girl" class="txt" required>
         </div>
         <div class="popup-row">
             <label for="theme-girl">Тема:</label>
-            <input type="text" name="name" id="theme-girl" class="txt" required>
+            <input type="text" name="name" maxlength="20" id="theme-girl" class="txt" required>
         </div>
         <div class="popup-row-message">
             <label for="message-girl">Сообщение:</label>
@@ -1099,7 +1103,7 @@
         <button type="submit" class="popup-sent">Отправить</button>
         <div class="popup-row-file">
             <label for="exampleInputFile">Прикрепить файл</label>
-            <input type="file" id="exampleInputFile">
+            <input type="file" maxlength="20" id="exampleInputFile">
         </div>
     </form>
 </div>
@@ -1132,23 +1136,23 @@
         <form class="sign-up-free">
             <div class="sign-row">
                 <label for="name-sign-up">Name</label>
-                <input type="text" name="name" id="name-sign-up" class="txt" placeholder="Viktoria" required>
+                <input type="text" name="name" maxlength="20" id="name-sign-up" class="txt" placeholder="Viktoria" required>
             </div>
             <div class="sign-row">
                 <label for="email-sign-up">Email</label>
-                <input type="email" name="email" id="email-sign-up"  placeholder="Viktoria@gmail.com" required>
+                <input type="email" name="email" maxlength="20" id="email-sign-up"  placeholder="Viktoria@gmail.com" required>
             </div>
             <div class="sign-row">
                 <label for="password-sign-up">Your password</label>
-                <input type="password" name="email" id="password-sign-up" class="txt" placeholder="Password" required>
+                <input type="password" name="email" maxlength="20" id="password-sign-up" class="txt" placeholder="Password" required>
             </div>
             <div class="sign-row">
                 <label for="repeat-password-sign-up">Repeat password</label>
-                <input type="password" name="email" id="repeat-password-sign-up" class="txt" placeholder="Repeat password" required>
+                <input type="password" name="email" maxlength="20" id="repeat-password-sign-up" class="txt" placeholder="Repeat password" required>
             </div>
             <div class="sign-row">
                 <ul>
-                    <li><input type="checkbox" id="check-sign-up" checked><label for="check-sign-up">I agree with</label></li>
+                    <li><input type="checkbox" maxlength="20" id="check-sign-up" checked><label for="check-sign-up">I agree with</label></li>
                     <li><a href="javascript: void(0)">License agreement</a></li>
                 </ul>
             </div>
@@ -1173,14 +1177,14 @@
             <form class="login-form">
                 <div class="login-row">
                     <label for="email-login">Email</label>
-                    <input type="email" name="email" id="email-login"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" id="email-login"  placeholder="Viktoria@gmail.com" required>
                 </div>
                 <div class="login-row">
                     <label for="password-login">Your password</label>
-                    <input type="password" name="email" id="password-login" class="txt" placeholder="Password" required>
+                    <input type="password" name="email" maxlength="20" id="password-login" class="txt" placeholder="Password" required>
                 </div>
                 <div class="login-row">
-                    <input type="checkbox" id="remember-me" checked><label for="remember-me">Remember me</label>
+                    <input type="checkbox" maxlength="20" id="remember-me" checked><label for="remember-me">Remember me</label>
                 </div>
                 <div class="login-border-register">
                     <button type="submit" class="register-login">Login</button>
@@ -1196,7 +1200,7 @@
             <form class="forgot-form">
                 <div class="forgot-row">
                     <label for="email-forgot">Email</label>
-                    <input type="email" name="email" id="email-forgot"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" maxlength="20" name="email" id="email-forgot"  placeholder="Viktoria@gmail.com" required>
                 </div>
                 <div class="sent-password">
                     <button type="submit" class="sent-password-button">Send password</button>
