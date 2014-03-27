@@ -762,6 +762,30 @@ body {
     width: 11px;
     height: 8px;
 }
+.wedding-hover {
+    display: none;
+    position: absolute;
+    border: 1px solid #c8d8df;
+    background-color: #dbe5ea;
+    padding: 4px 2px 6px 3px;
+    top: 100%;
+    left: 0;
+    margin-top: 13px;
+    font-family: pt_sansbold;
+    font-size: 12px;
+    z-index: 101;
+}
+.wedding-hover:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAYAAAAvOAWIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJxJREFUeNpiPHHjPgMa4ATiKiCuA+L/yBIsaArZgPgcEGsAsTgQpyNrYELTeAykkIUJLJwKxDOBmBFdMTMQ7wBiYzYWZgZeLg4GbBqYoHg9EDuzAhXycHAwMDEyYtUAsnohEPuyMgNN5GBnYIRaCtPw+dsPhj///oE0MDACQ+M/CzMTAy8nxER08O//f5gGBiawG3EoRLYBpA4gwADzJCHAUqQ8vQAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 11px;
+    height: 8px;
+}
 .friendship-hover {
     display: none;
     position: absolute;
@@ -1079,17 +1103,21 @@ body {
 .desire-friend {
     float: left;
     margin-right: 4px;
+    position: relative;
 }
 .desire-trip {
     float: left;
     margin-right: 4px;
+    position: relative;
 }
 .desire-chat {
     float: left;
     margin-right: 4px;
+    position: relative;
 }
 .desire-wedding {
     float: left;
+    position: relative;
 }
 .desire-friend-button {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAp1JREFUeNq0Vt1PUmEcfjhAEFQyYQlIbbWM9UUtljnbys1Kc7rVumhx0eZlW1f+Bf0BrZsuvGnzsovWFTfeaGlmaKERRKDQLOhjQIhj5/B1gM77Os5cwAEVf9vvcN733fs8v++DzOl06gA8FXQUeyMTgo4phMcMy3K2bC6LcrncUgaZTAa1Sj2q1WrshMim0Wqg07VBxjAtJSqXSsgXCuTVRoiga9NBoZBTC1pKJESI54vY2EiBEimVipaTVEKnVG7iUiKmxSH7n0wkauTN4tIneL8GkM8XYDGbcK23B4cOHqBnJSEPzRja0KPVb2twe7ziOvrrN1wflzDY34dlrw/zi25oNRoM3+yHQd9eF4epeFRP44m/VZcIGTmzdnXRNctx8AWCdTGa8ki9X11tnZyhd3ieF/f2qVSSODsuBnKH5Ec0qBkiqWIwdXRU7ZmNRnpnPZUS9y6cOyuJw1Ssq6dnTlmhEqzdKld6uunZWiRK10ctnWgXJks9jKaI8rkcRm4NiCQE9MTxYwiGwvAHVujej+hPPHk2jqnZOWSy2ZpEcofD8Viv19esluR6CgvuZbg+uIUeym9WGMvheySCIxYLrvddBcdlEIsnUCwW8ScWh8fnh1qtoiEXcZLJ2sVAwGbnXfB88VfFmhcAQ0JvET1sMODu7REMDdzAi5evqGdkiL59vwD7eZt01fn8AUxOv6ZToJHEEgmMP5/AaetJjD16iMBqCJlMFpZOM8pFXrrqJqffNEWyVfzBFczMvUO3/SI1OifkNVcqSk+G3suXtt1XZpORFgjLskin0zSfDSfDneEhPLh/b1tEBSEvsViM/jbdsKRCiO7mk7CjydAqITFzk9hKTfDdKMEmHMSjwXA4PEX+QOyRM58Jxz8BBgD6HffyidYdyAAAAABJRU5ErkJggg==);
@@ -1146,6 +1174,18 @@ body {
     width: 26px;
     height: 24px;
     border: none;
+}
+.desire-chat:hover .communication-hover {
+    display: block;
+}
+.desire-trip:hover .airplane-hover {
+    display: block;
+}
+.desire-friend:hover .friendship-hover {
+    display: block;
+}
+.desire-wedding:hover .wedding-hover {
+    display: block;
 }
 .dreams-girls {
     overflow: hidden;
@@ -2412,4 +2452,118 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     width: 16px;
     height: 13px;
     right: 100%;
+}
+/* -------------------- SCROLL for License agreement --------- */
+#popup-content-license-agreement {
+    overflow: auto;
+    width: 932px !important;
+    height: 233px;
+    padding: 0 5px;
+    border: 1px solid transparent;
+    font-family: pt_sansregular;
+    margin: 20px 0 0 20px;
+}
+/* ---------------*/
+.age-filter {
+    float: left;
+    margin-top: 10px;
+}
+.age-filter h2 {
+    font-family: pt_sansbold;
+    font-size: 16px;
+}
+.filter-border {
+    padding: 5px 10px 0 10px;
+    border: 1px solid #dbe5ea;
+    background-color: #dbe5ea;
+    height: 45px;
+    margin-top: 10px;
+}
+/* Ширина слайдера */
+#age-slider {
+    width: 111px;
+    float: left;
+    margin-top: 10px;
+}
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 9px;   /* Задаем нужную ширину */
+    height: 15px;  /* и высоту */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWFJREFUeNpkkU1LAlEYhd+ZO05YY2VGmUhaCxctWugism1ftGoX1J9o2U9oXf8i3NTKVAihL8qEXAaFYMqIjo46OejcmeneC06pB87l8JyzeOFy8UwCiLaJz4lj8Kc34jPijECePTQ3n9xcDEAObNZuuSbgXtdiWKmnzUZ9nyf8Iu4PDg0ejB5wggsopz0PHERebXNoMMiMk56nAOM+xHgEWb0zlqnYKCqI8EigaeKx7Iyeui3ApgHrBI5mZ4SxAWsEvvyoY9kZRciRea3JbhjNbKRXqpcfcoXBVdENhY7iZMppjyyeS82uhHZ9kif41dfAsiwIuz1QUmqA5Przd+LmCHHTHttQ27eT4eUTLHBSQJqBsqrAVEuvlq+TO9pnsYXE4BL0akrbxmbOFwofy5aOvF2rX01nDxv59wK9iY2ouqVyUfTOqL4F/0EzXziVU3dXg5/mpI0ojEgi1v6DXwEGAF1NwK6sXwN9AAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+    height: 3px; /* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+    top: -11px;
+    margin-left: -5px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+    border: 1px solid #a7b5bb;
+    background: #b2c1c7;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAIAAAArjXluAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAADUBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDQuMi4yLWMwNjMgNTMuMzUyNjI0LCAyMDA4LzA3LzMwLTE4OjEyOjE4ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgeG1wUmlnaHRzOk1hcmtlZD0iRmFsc2UiCiAgIHhtcFJpZ2h0czpXZWJTdGF0ZW1lbnQ9IiIKICAgcGhvdG9zaG9wOkF1dGhvcnNQb3NpdGlvbj0iIj4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCIvPgogICAgPC9yZGY6QWx0PgogICA8L2RjOnJpZ2h0cz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpLz4KICAgIDwvcmRmOlNlcT4KICAgPC9kYzpjcmVhdG9yPgogICA8ZGM6dGl0bGU+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiLz4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzp0aXRsZT4KICAgPHhtcFJpZ2h0czpVc2FnZVRlcm1zPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ii8+CiAgICA8L3JkZjpBbHQ+CiAgIDwveG1wUmlnaHRzOlVzYWdlVGVybXM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lBZHJFeHRhZHI9IiIKICAgIElwdGM0eG1wQ29yZTpDaUFkckNpdHk9IiIKICAgIElwdGM0eG1wQ29yZTpDaUFkclJlZ2lvbj0iIgogICAgSXB0YzR4bXBDb3JlOkNpQWRyUGNvZGU9IiIKICAgIElwdGM0eG1wQ29yZTpDaUFkckN0cnk9IiIKICAgIElwdGM0eG1wQ29yZTpDaVRlbFdvcms9IiIKICAgIElwdGM0eG1wQ29yZTpDaUVtYWlsV29yaz0iIgogICAgSXB0YzR4bXBDb3JlOkNpVXJsV29yaz0iIi8+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz6wCsCdAAAAKElEQVR42mJ0uXGBWZCf5ScHE8P3zyyfPr/9d+8RM4eh2m9FSYAAAwCm6wwtWpMnrwAAAABJRU5ErkJggg==);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 4px;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+#minCost {
+    width: 15px;
+    margin: 10px 0 0 0;
+    float: left;
+    border: 1px solid transparent;
+    background-color: #dbe5ea;
+    outline: none;
+}
+#maxCost {
+    width: 22px;
+    margin: 10px 0 0 15px;
+    float: left;
+    border: 1px solid transparent;
+    background-color: #dbe5ea;
+    outline: none;
+}
+.filter-border p {
+    float: left;
+    margin: 10px 0 0 0;
+    font-size: 11px;
+    font-family: PTsans;
 }

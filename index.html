@@ -7,16 +7,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="js/libraries/jquery-1.8.2.min.js"></script>
+    <script src="js/libraries/jquery-1.7.2.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <link href="js/jquery.bxslider.css" rel="stylesheet">
+    <link href="js/scrollbar.style.css" rel="stylesheet">
     <link href="js/bxslider.style.css" rel="stylesheet">
+    <script src="js/enscroll-0.6.0.min.js"></script>
+    <script src="js/jquery.ui-slider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#age-slider").slider({
+                min: 10,
+                max: 100,
+                values: [10,100],
+                range: true,
+                stop: function(event, ui) {
+                    jQuery("input#minCost").val(jQuery("#age-slider").slider("values",0));
+                    jQuery("input#maxCost").val(jQuery("#age-slider").slider("values",1));
+                },
+                slide: function(event, ui){
+                    jQuery("input#minCost").val(jQuery("#age-slider").slider("values",0));
+                    jQuery("input#maxCost").val(jQuery("#age-slider").slider("values",1));
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("input#minCost").change(function(){
+            var value1=jQuery("input#minCost").val();
+            var value2=jQuery("input#maxCost").val();
+
+            if(parseInt(value1) > parseInt(value2)){
+                value1 = value2;
+                jQuery("input#minCost").val(value1);
+            }
+            jQuery("#slider").slider("values",0,value1);
+        });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $("input#maxCost").change(function(){
+            var value1=jQuery("input#minCost").val();
+            var value2=jQuery("input#maxCost").val();
+
+            if (value2 > 100) { value2 = 100; jQuery("input#maxCost").val(100)}
+
+            if(parseInt(value1) > parseInt(value2)){
+                value2 = value1;
+                jQuery("input#maxCost").val(value2);
+            }
+            jQuery("#slider").slider("values",1,value2);
+        });
+        });
+    </script>
     <script>
         $(document).ready(function(){
             $('.carousel').bxSlider({
                 pagerCustom: '#bx-pager'
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $('#popup-content-license-agreement').enscroll({
+            verticalTrackClass: 'track1',
+            verticalHandleClass: 'handle1',
+            drawScrollButtons: true,
+            scrollUpButtonClass: 'scroll-up1',
+            scrollDownButtonClass: 'scroll-down1'
+        });
         });
     </script>
 
@@ -341,17 +403,31 @@
                         <div class="desire-button">
                             <div class="desire-friend">
                                 <button class="desire-friend-button"></button>
+                                <div class="friendship-hover">Friendship</div>
                             </div>
                             <div class="desire-trip">
                                 <button class="desire-trip-button"></button>
+                                <div class="airplane-hover">Airplane</div>
                             </div>
                             <div class="desire-chat">
                                 <button class="desire-chat-button"></button>
+                                <div class="friendship-hover">Friendship</div>
+                                <div class="communication-hover">Communication</div>
                             </div>
                             <div class="desire-wedding">
-                            <button class="desire-wedding-button"></button>
+                                <button class="desire-wedding-button"></button>
+                                <button class="wedding-hover">Wedding</button>
                             </div>
                         </div>
+                </div>
+                <div class="age-filter">
+                    <h2>Age</h2>
+                    <div class="filter-border">
+                        <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="age-slider">
+                            <input type="text" id="minCost" value="10"><p>years</p>
+                            <input type="text" id="maxCost" value="100"><p>years</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -983,7 +1059,13 @@
             Many form contracts are only contained in digital form, and only presented to a user as a click-through where the user must "accept". As the user may not see the agreement until after he or she has already purchased the software, these documents may be contracts of adhesion.
             Software companies often make special agreements with large businesses and government entities that include support contracts and specially drafted warranties.</p>
         <p>Some end-user license agreement form contracts accompany shrink-wrapped software that is presented to a user sometimes on paper or more usually electronically, during the installation procedure. The user has the choice of accepting or rejecting the agreement. The installation of the software is conditional to the user clicking a button labelled "accept". See below.</p>
+        <p>In the proprietary software branch, an end-user license agreement (EULA) or software license agreement is the contract between the licensor and purchaser, establishing the purchaser's right to use the software. The license may define ways under which the copy can be used, in addition to the automatic rights of the buyer including the first sale doctrine and 17 U.S.C. § 117 (freedom to use, archive, re-sale, and backup).
+            Many form contracts are only contained in digital form, and only presented to a user as a click-through where the user must "accept". As the user may not see the agreement until after he or she has already purchased the software, these documents may be contracts of adhesion.
+            Software companies often make special agreements with large businesses and government entities that include support contracts and specially drafted warranties.</p>
+        <p>Some end-user license agreement form contracts accompany shrink-wrapped software that is presented to a user sometimes on paper or more usually electronically, during the installation procedure. The user has the choice of accepting or rejecting the agreement. The installation of the software is conditional to the user clicking a button labelled "accept". See below.</p>
     </div>
+    </div>
+
 </div>
 <div class="popup-registration">
     <div class="popup-header-registration">
