@@ -65,6 +65,54 @@
     </script>
     <script>
         $(document).ready(function(){
+            $("#ladies-filter").slider({
+                min: 10,
+                max: 100,
+                values: [10,100],
+                range: true,
+                stop: function(event, ui) {
+                    jQuery("input#minCost-ladies").val(jQuery("#ladies-filter").slider("values",0));
+                    jQuery("input#maxCost-ladies").val(jQuery("#ladies-filter").slider("values",1));
+                },
+                slide: function(event, ui){
+                    jQuery("input#minCost-ladies").val(jQuery("#ladies-filter").slider("values",0));
+                    jQuery("input#maxCost-ladies").val(jQuery("#ladies-filter").slider("values",1));
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("input#minCost-ladies").change(function(){
+                var value1=jQuery("input#minCost-ladies").val();
+                var value2=jQuery("input#maxCost-ladies").val();
+
+                if(parseInt(value1) > parseInt(value2)){
+                    value1 = value2;
+                    jQuery("input#minCost-ladies").val(value1);
+                }
+                jQuery("#slider").slider("values",0,value1);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("input#maxCost-ladies").change(function(){
+                var value1=jQuery("input#minCost-ladies").val();
+                var value2=jQuery("input#maxCost-ladies").val();
+
+                if (value2 > 100) { value2 = 100; jQuery("input#maxCost-ladies").val(100)}
+
+                if(parseInt(value1) > parseInt(value2)){
+                    value2 = value1;
+                    jQuery("input#maxCost-ladies").val(value2);
+                }
+                jQuery("#slider").slider("values",1,value2);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
             $('.carousel').bxSlider({
                 pagerCustom: '#bx-pager'
             });
@@ -464,6 +512,12 @@
                 <div class="online-girls-button">
                     <button class="online-girls">Online</button>
                     <button class="all-girls active">All girls</button>
+                </div>
+                <div class="ladies-border">
+                    <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="ladies-filter">
+                        <input type="text" id="minCost-ladies" value="10"><p>years</p>
+                        <input type="text" id="maxCost-ladies" value="100"><p>years</p>
+                    </div>
                 </div>
             </div>
             <div class="popular-ladies">
