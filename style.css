@@ -1626,7 +1626,8 @@ body {
     display: inline;
 }
 /* ----------------- Chat -----------------*/
-.chat-closed {
+
+#start-chat-closed {
     width: 300px;
     height: 72px;
     border-bottom: 8px solid #00c6a9;
@@ -1640,14 +1641,14 @@ body {
     box-shadow: 0 0 5px -2px;
     z-index: 101;
 }
-.chat-closed h1 {
+#start-chat-closed h1 {
     float: left;
     font-family: pt_sansbold;
     font-size: 16px;
     margin-left: 20px;
     margin-top: 3px;
 }
-.chat-closed h1 p {
+#start-chat-closed h1 span {
     font-family: pt_sansbold;
     font-size: 16px;
     color: #00c6a9;
@@ -1691,7 +1692,7 @@ body {
     border-radius: 3px;
     margin: 15px 0 0 40px;
 }
-.chat-turn {
+#start-chat-opened {
     display: none;
     width: 300px;
     height: 295px;
@@ -1703,14 +1704,14 @@ body {
     box-shadow: 0 0 5px -2px;
     z-index: 101;
 }
-.chat-turn h1 {
+#start-chat-opened h1 {
     float: left;
     font-family: pt_sansbold;
     font-size: 16px;
     margin-left: 10px;
     margin-top: 15px;
 }
-.chat-turn h1 p {
+#start-chat-opened h1 span {
     font-family: pt_sansbold;
     font-size: 16px;
     color: #00c6a9;
@@ -1849,7 +1850,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     font-family: pt_sansbold;
     border-radius: 3px;
     margin: 12px 0 0 0;
-    width: 110px;
+    width: 130px;
 }
 /* --------- REGISTRATION FOR GIRL ----------------*/
 .popup-registration-for-girl {
@@ -2358,7 +2359,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
 .forgot-password {
     display: none;
     width: 210px;
-    height: 500px;
+    height: 255px;
     float: left;
     margin: 33px 0 0 60px
 }
