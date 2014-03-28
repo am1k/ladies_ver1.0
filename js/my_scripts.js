@@ -9,7 +9,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -26,7 +26,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -42,7 +42,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -58,7 +58,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -74,7 +74,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -90,7 +90,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -106,7 +106,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration').hide();
         return false;
     });
@@ -115,14 +115,14 @@ $(function () {
     //script for popups
     $('.row ul li').click(function () {
         $('div.'+$(this).attr("rel")).fadeIn(500);
-        $("body").append("<div id='overlay'></div>");
+        $("body").append("<div id='license'></div>");
         $('.popup-header-license-agreement').show();
-        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+        $('#license').show().css({'filter' : 'alpha(opacity=80)'});
         return false;
     });
     $('.license-close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#license').remove();
         $('.popup-license-agreement').hide();
         return false;
     });
@@ -131,14 +131,14 @@ $(function () {
     //script for popups
     $('.sign-row ul li').click(function () {
         $('div.'+$(this).attr("rel")).fadeIn(500);
-        $("body").append("<div id='overlay-license'></div>");
+        $("body").append("<div id='license'></div>");
         $('.popup-header-license-agreement').show();
-        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+        $('#license').show().css({'filter' : 'alpha(opacity=80)'});
         return false;
     });
     $('.license-close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay-license').remove('#overlay-license');
+        $('#license').remove();
         $('.popup-license-agreement').hide();
         return false;
     });
@@ -154,7 +154,7 @@ $(function () {
     });
     $('.close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
+        $('#overlay').remove();
         $('.popup-registration-for-girl').hide();
         return false;
     });
