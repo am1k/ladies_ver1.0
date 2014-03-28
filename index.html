@@ -10,6 +10,7 @@
     <link href="js/jquery.bxslider.css" rel="stylesheet">
     <link href="js/scrollbar.style.css" rel="stylesheet">
     <link href="js/bxslider.style.css" rel="stylesheet">
+    <link href="js/validationEngine.jquery.css" rel="stylesheet">
 </head>
 <body>
 <div id="wrapper">
@@ -62,12 +63,12 @@
             <form class="registration-field active">
                 <div class="row">
                     <label for="registr-name">Name:</label>
-                    <input type="text" name="name" maxlength="20" id="registr-name" class="txt" placeholder="Viktoria" required>
+                    <input type="text" name="name"  maxlength="20" id="registr-name" class="txt" placeholder="Viktoria" required>
                 </div>
 
                 <div class="row">
                     <label for="email-enter">Email:</label>
-                    <input type="email" name="email" maxlength="20" id="email-enter"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" class="validate[required,custom[email]]" id="email-enter"  placeholder="Viktoria@gmail.com" required>
                 </div>
 
                 <div class="row">
@@ -328,20 +329,20 @@
                     <h2>Desire</h2>
                         <div class="desire-button">
                             <div class="desire-friend">
-                                <button class="desire-friend-button"></button>
+                                <button class="desire-friend-button push"></button>
                                 <div class="friendship-hover">Friendship</div>
                             </div>
                             <div class="desire-trip">
-                                <button class="desire-trip-button"></button>
+                                <button class="desire-trip-button push"></button>
                                 <div class="airplane-hover">Airplane</div>
                             </div>
                             <div class="desire-chat">
-                                <button class="desire-chat-button"></button>
+                                <button class="desire-chat-button push"></button>
                                 <div class="friendship-hover">Friendship</div>
                                 <div class="communication-hover">Communication</div>
                             </div>
                             <div class="desire-wedding">
-                                <button class="desire-wedding-button"></button>
+                                <button class="desire-wedding-button push"></button>
                                 <button class="wedding-hover">Wedding</button>
                             </div>
                         </div>
@@ -946,7 +947,7 @@
         <div class="chat-id">ID: 98175</div>
         <div class="chat-welcome"><p>Hello. Happy to see you here</p></div>
         <div class="chat-start-chart">
-            <button class="chat-chart">Start Chart</button>
+            <button class="chat-chart popup-reg" rel="popup-registration">Start Chart</button>
         </div>
     </div>
     <div class="chat-online"><p>Girls online: 177</p></div>
@@ -1103,6 +1104,8 @@
 <script src="js/jquery.ui-slider.js"></script>
 <script src="js/my_scripts.js"></script>
 <script src="js/button.js"></script>
+<script src="js/jquery.validationEngine-en.js"></script>
+<script src="js/jquery.validationEngine.js"></script>
 <script>
     $(document).ready(function(){
         $("#age-slider").slider({
