@@ -41,15 +41,16 @@
 }
 html {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 body {
     width: 100%;
     height: 100%;
     background-color: #6aa1f5;
-    background-image: url(img/bg-body-top.png), url(img/bg-body-bottom.png);
+    background-image: url(img/bg-body-bottom.png), url(img/bg-body-top.png);
     background-position: center bottom, center top;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 #wrapper {
     width: 1024px;
