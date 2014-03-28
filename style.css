@@ -284,6 +284,9 @@ body {
 .registration-field {
     float: left;
 }
+.registration-field-reg.active ul {
+    margin-bottom: 18px;
+}
 .row {
     float: left;
     margin: 15px 0 0 15px;
