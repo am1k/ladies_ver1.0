@@ -1,22 +1,5 @@
 $(function () {
     //script for popups
-    $('.register').click(function () {
-        $('div.'+$(this).attr("rel")).fadeIn(500);
-        $("body").append("<div id='overlay'></div>");
-        $('.popup-header-registration').show();
-        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-        return false;
-    });
-    $('.close-icon').click(function () {
-        $(this).parent().fadeOut(100);
-        $('#overlay').remove('#overlay');
-        $('.popup-registration').hide();
-        return false;
-    });
-});
-
-$(function () {
-    //script for popups
     $('.name-ladies').click(function () {
         $('div.'+$(this).attr("rel")).fadeIn(500);
         $("body").append("<div id='overlay'></div>");
@@ -109,6 +92,70 @@ $(function () {
         $(this).parent().fadeOut(100);
         $('#overlay').remove('#overlay');
         $('.popup-registration').hide();
+        return false;
+    });
+});
+$(function () {
+    //script for popups
+    $('.advanced-search').click(function () {
+        $('div.'+$(this).attr("rel")).fadeIn(500);
+        $("body").append("<div id='overlay'></div>");
+        $('.popup-header-registration').show();
+        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+        return false;
+    });
+    $('.close-icon').click(function () {
+        $(this).parent().fadeOut(100);
+        $('#overlay').remove('#overlay');
+        $('.popup-registration').hide();
+        return false;
+    });
+});
+$(function () {
+    //script for popups
+    $('.row ul li').click(function () {
+        $('div.'+$(this).attr("rel")).fadeIn(500);
+        $("body").append("<div id='overlay'></div>");
+        $('.popup-header-license-agreement').show();
+        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+        return false;
+    });
+    $('.license-close-icon').click(function () {
+        $(this).parent().fadeOut(100);
+        $('#overlay').remove('#overlay');
+        $('.popup-license-agreement').hide();
+        return false;
+    });
+});
+$(function () {
+    //script for popups
+    $('.sign-row ul li').click(function () {
+        $('div.'+$(this).attr("rel")).fadeIn(500);
+        $("body").append("<div id='overlay-license'></div>");
+        $('.popup-header-license-agreement').show();
+        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+        return false;
+    });
+    $('.license-close-icon').click(function () {
+        $(this).parent().fadeOut(100);
+        $('#overlay-license').remove('#overlay-license');
+        $('.popup-license-agreement').hide();
+        return false;
+    });
+});
+$(function () {
+    //script for popups
+    $('.registration-for-girl-button').click(function () {
+        $('div.'+$(this).attr("rel")).fadeIn(500);
+        $("body").append("<div id='overlay'></div>");
+        $('.popup-header-registration-for-girl').show();
+        $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+        return false;
+    });
+    $('.close-icon').click(function () {
+        $(this).parent().fadeOut(100);
+        $('#overlay').remove('#overlay');
+        $('.popup-registration-for-girl').hide();
         return false;
     });
 });

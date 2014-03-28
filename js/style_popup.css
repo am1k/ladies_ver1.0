@@ -38,18 +38,25 @@ border:1px solid #ccc;
 background:#fff;
 z-index: 103;
 }
-.popup h2 {
-font:bold 18px/32px Arial, san-serif;
+.popup-license {
+    position:fixed;
+    top:100px;
+    left:23%;
+    display:none;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index: 104;
 }
-.popup a.close {
-width:16px;
-height:16px;
-display:block;
-text-indent:-9999px;
-position:absolute;
-top:10px;
-right:10px;
-background:url(../images/close.png) no-repeat;
+.popup-girl {
+    position:fixed;
+    top:100px;
+    left:31%;
+    display:none;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index: 104;
 }
 /**********overlay styles**********/
 #overlay {
@@ -62,4 +69,15 @@ display:none;
 background:#000;
 opacity:.8;
 z-index: 102;
+}
+#overlay-license {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    background:#000;
+    opacity:.8;
+    z-index: 102;
 }

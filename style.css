@@ -1868,6 +1868,16 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     top: 40%;
     cursor: pointer;
 }
+.license-close-icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYAAAArzdW1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIJJREFUeNpiNHX28WRgYNjGAAHcQPwNiC2A+DgQLwHiOCYgsR3KAYGZQMwFVQAC+UD8nwXKSQfiGCh+BhWLBeJ3IAYTVABkhReUXQbEB5FMhysCAQcktj3UWhRFmkgmFEHF6pEVMQLxdCi/Aup4mLWaMEUFUOO7gPgEmvtAmlkBAgwApKoYdMDTIYcAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 8px;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    cursor: pointer
+}
 .popup-content-registration-for-girl {
     overflow: hidden;
     margin-top: 17px;
@@ -2491,6 +2501,14 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     height: 30px;
     margin-top: 10px;
     border-radius: 3px;
+}
+.advanced-search {
+    float: left;
+    margin-top: 10px;
+    font-family: pt_sansregular;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .ladies-border {
     padding: 0 10px 0 10px;
