@@ -81,7 +81,7 @@ $(function () {
 });
 $(function () {
     //script for popups
-    $('.nav-menu ul li').click(function () {
+    $('.nav-menu ul li.show-popup').click(function () {
         $('div.'+$(this).attr("rel")).fadeIn(500);
         $("body").append("<div id='overlay'></div>");
         $('.popup-header-registration').show();
@@ -131,14 +131,11 @@ $(function () {
     //script for popups
     $('.sign-row ul li').click(function () {
         $('div.'+$(this).attr("rel")).fadeIn(500);
-        $("body").append("<div id='license'></div>");
         $('.popup-header-license-agreement').show();
-        $('#license').show().css({'filter' : 'alpha(opacity=80)'});
         return false;
     });
     $('.license-close-icon').click(function () {
         $(this).parent().fadeOut(100);
-        $('#license').remove();
         $('.popup-license-agreement').hide();
         return false;
     });
