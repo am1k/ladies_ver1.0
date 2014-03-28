@@ -3,141 +3,13 @@
     <meta charset="utf-8">
     <title>Home</title>
     <meta name="keywords" content="">
-    <meta name="description" charset="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="js/libraries/jquery-1.7.2.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
+    <link href="js/style_popup.css" rel="stylesheet">
     <link href="js/jquery.bxslider.css" rel="stylesheet">
     <link href="js/scrollbar.style.css" rel="stylesheet">
     <link href="js/bxslider.style.css" rel="stylesheet">
-    <script src="js/enscroll-0.6.0.min.js"></script>
-    <script src="js/jquery.ui-slider.js"></script>
-    <script src="js/my_scripts.js"></script>
-    <script src="js/button.js"></script>
-    <link href="js/style_popup.css" rel="stylesheet">
-    <script>
-        $(document).ready(function(){
-            $("#age-slider").slider({
-                min: 10,
-                max: 100,
-                values: [10,100],
-                range: true,
-                stop: function(event, ui) {
-                    jQuery("input#minCost").val(jQuery("#age-slider").slider("values",0));
-                    jQuery("input#maxCost").val(jQuery("#age-slider").slider("values",1));
-                },
-                slide: function(event, ui){
-                    jQuery("input#minCost").val(jQuery("#age-slider").slider("values",0));
-                    jQuery("input#maxCost").val(jQuery("#age-slider").slider("values",1));
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-        $("input#minCost").change(function(){
-            var value1=jQuery("input#minCost").val();
-            var value2=jQuery("input#maxCost").val();
-
-            if(parseInt(value1) > parseInt(value2)){
-                value1 = value2;
-                jQuery("input#minCost").val(value1);
-            }
-            jQuery("#slider").slider("values",0,value1);
-        });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-        $("input#maxCost").change(function(){
-            var value1=jQuery("input#minCost").val();
-            var value2=jQuery("input#maxCost").val();
-
-            if (value2 > 100) { value2 = 100; jQuery("input#maxCost").val(100)}
-
-            if(parseInt(value1) > parseInt(value2)){
-                value2 = value1;
-                jQuery("input#maxCost").val(value2);
-            }
-            jQuery("#slider").slider("values",1,value2);
-        });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("#ladies-filter").slider({
-                min: 10,
-                max: 100,
-                values: [10,100],
-                range: true,
-                stop: function(event, ui) {
-                    jQuery("input#minCost-ladies").val(jQuery("#ladies-filter").slider("values",0));
-                    jQuery("input#maxCost-ladies").val(jQuery("#ladies-filter").slider("values",1));
-                },
-                slide: function(event, ui){
-                    jQuery("input#minCost-ladies").val(jQuery("#ladies-filter").slider("values",0));
-                    jQuery("input#maxCost-ladies").val(jQuery("#ladies-filter").slider("values",1));
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("input#minCost-ladies").change(function(){
-                var value1=jQuery("input#minCost-ladies").val();
-                var value2=jQuery("input#maxCost-ladies").val();
-
-                if(parseInt(value1) > parseInt(value2)){
-                    value1 = value2;
-                    jQuery("input#minCost-ladies").val(value1);
-                }
-                jQuery("#slider").slider("values",0,value1);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $("input#maxCost-ladies").change(function(){
-                var value1=jQuery("input#minCost-ladies").val();
-                var value2=jQuery("input#maxCost-ladies").val();
-
-                if (value2 > 100) { value2 = 100; jQuery("input#maxCost-ladies").val(100)}
-
-                if(parseInt(value1) > parseInt(value2)){
-                    value2 = value1;
-                    jQuery("input#maxCost-ladies").val(value2);
-                }
-                jQuery("#slider").slider("values",1,value2);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('.carousel').bxSlider({
-                pagerCustom: '#bx-pager',
-                mode: 'fade',
-                captions: true,
-                auto: true,
-                speed: 500
-        });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-        $('#popup-content-license-agreement').enscroll({
-            verticalTrackClass: 'track1',
-            verticalHandleClass: 'handle1',
-            drawScrollButtons: true,
-            scrollUpButtonClass: 'scroll-up1',
-            scrollDownButtonClass: 'scroll-down1'
-        });
-        });
-    </script>
-
-
 </head>
 <body>
 <div id="wrapper">
@@ -1128,8 +1000,6 @@
         <p>Some end-user license agreement form contracts accompany shrink-wrapped software that is presented to a user sometimes on paper or more usually electronically, during the installation procedure. The user has the choice of accepting or rejecting the agreement. The installation of the software is conditional to the user clicking a button labelled "accept". See below.</p>
     </div>
     </div>
-
-</div>
 <div class="popup popup-registration">
     <div class="popup-header-registration">
         <h1>Registration</h1>
@@ -1225,4 +1095,130 @@
         </div>
     </div>
 </div>
+
+<script src="js/libraries/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/enscroll-0.6.0.min.js"></script>
+<script src="js/jquery.ui-slider.js"></script>
+<script src="js/my_scripts.js"></script>
+<script src="js/button.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#age-slider").slider({
+            min: 10,
+            max: 100,
+            values: [10,100],
+            range: true,
+            stop: function(event, ui) {
+                jQuery("input#minCost").val(jQuery("#age-slider").slider("values",0));
+                jQuery("input#maxCost").val(jQuery("#age-slider").slider("values",1));
+            },
+            slide: function(event, ui){
+                jQuery("input#minCost").val(jQuery("#age-slider").slider("values",0));
+                jQuery("input#maxCost").val(jQuery("#age-slider").slider("values",1));
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("input#minCost").change(function(){
+            var value1=jQuery("input#minCost").val();
+            var value2=jQuery("input#maxCost").val();
+
+            if(parseInt(value1) > parseInt(value2)){
+                value1 = value2;
+                jQuery("input#minCost").val(value1);
+            }
+            jQuery("#slider").slider("values",0,value1);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("input#maxCost").change(function(){
+            var value1=jQuery("input#minCost").val();
+            var value2=jQuery("input#maxCost").val();
+
+            if (value2 > 100) { value2 = 100; jQuery("input#maxCost").val(100)}
+
+            if(parseInt(value1) > parseInt(value2)){
+                value2 = value1;
+                jQuery("input#maxCost").val(value2);
+            }
+            jQuery("#slider").slider("values",1,value2);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#ladies-filter").slider({
+            min: 10,
+            max: 100,
+            values: [10,100],
+            range: true,
+            stop: function(event, ui) {
+                jQuery("input#minCost-ladies").val(jQuery("#ladies-filter").slider("values",0));
+                jQuery("input#maxCost-ladies").val(jQuery("#ladies-filter").slider("values",1));
+            },
+            slide: function(event, ui){
+                jQuery("input#minCost-ladies").val(jQuery("#ladies-filter").slider("values",0));
+                jQuery("input#maxCost-ladies").val(jQuery("#ladies-filter").slider("values",1));
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("input#minCost-ladies").change(function(){
+            var value1=jQuery("input#minCost-ladies").val();
+            var value2=jQuery("input#maxCost-ladies").val();
+
+            if(parseInt(value1) > parseInt(value2)){
+                value1 = value2;
+                jQuery("input#minCost-ladies").val(value1);
+            }
+            jQuery("#slider").slider("values",0,value1);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("input#maxCost-ladies").change(function(){
+            var value1=jQuery("input#minCost-ladies").val();
+            var value2=jQuery("input#maxCost-ladies").val();
+
+            if (value2 > 100) { value2 = 100; jQuery("input#maxCost-ladies").val(100)}
+
+            if(parseInt(value1) > parseInt(value2)){
+                value2 = value1;
+                jQuery("input#maxCost-ladies").val(value2);
+            }
+            jQuery("#slider").slider("values",1,value2);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').bxSlider({
+            pagerCustom: '#bx-pager',
+            mode: 'fade',
+            captions: true,
+            auto: true,
+            speed: 500
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('#popup-content-license-agreement').enscroll({
+            verticalTrackClass: 'track1',
+            verticalHandleClass: 'handle1',
+            drawScrollButtons: true,
+            scrollUpButtonClass: 'scroll-up1',
+            scrollDownButtonClass: 'scroll-down1'
+        });
+    });
+</script>
 </body>
