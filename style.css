@@ -208,6 +208,15 @@ body {
     float: right;
     z-index: 101;
 }
+
+.registration-enter > form {
+    display: none;
+}
+
+.registration-enter > form.active {
+    display: block;
+}
+
 .button-registration {
     float: left;
     font-family: pt_sans_narrowbold;
@@ -458,6 +467,10 @@ body {
 }
 .registration-field {
     float: left;
+}
+.registration-field-reg {
+    float: left;
+    display: none;
 }
 .row {
     float: left;
