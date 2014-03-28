@@ -2639,3 +2639,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     font-size: 11px;
     font-family: PTsans;
 }
+
+.error {
+    border: solid 2px #cc3333 !important;
+}

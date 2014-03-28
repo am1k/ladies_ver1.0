@@ -60,15 +60,15 @@
         <div class="registration-enter">
             <button class="button-registration push">Registration</button>
             <button class="enter-registration push active">Enter</button>
-            <form class="registration-field active">
+            <form class="registration-field active validate" novalidate>
                 <div class="row">
                     <label for="registr-name">Name:</label>
-                    <input type="text" name="name"  maxlength="20" id="registr-name" class="txt" placeholder="Viktoria" required>
+                    <input type="text" name="name" class="validate[required]"  maxlength="20" id="registr-name" placeholder="Viktoria" required>
                 </div>
 
                 <div class="row">
                     <label for="email-enter">Email:</label>
-                    <input type="email" name="email" maxlength="20" class="validate[required,custom[email]]" id="email-enter"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" class="validate[custom[email]]" id="email-enter"  placeholder="Viktoria@gmail.com" required>
                 </div>
 
                 <div class="row">
@@ -83,15 +83,15 @@
                     <button type="submit" class="register">Register</button>
                 </div>
             </form>
-            <form class="registration-field-reg">
+            <form class="registration-field-reg validate" novalidate>
                 <div class="row">
                     <label for="email-registration">Email:</label>
-                    <input type="email" name="email" maxlength="20" id="email-registration"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" class="validate[custom[email]]" id="email-registration"  placeholder="Viktoria@gmail.com" required>
                 </div>
 
                 <div class="row">
                     <label for="registr-password">Password:</label>
-                    <input type="password" name="password" maxlength="20" id="registr-password" class="txt" placeholder="Your password" required>
+                    <input type="password" name="password" maxlength="20" class="validate[required]" id="registr-password" class="txt" placeholder="Your password" required>
                 </div>
                 <div class="row">
                     <ul>
@@ -1009,22 +1009,22 @@
     <div class="popup-content-registration">
         <div class="sign-up">
             <h1>Sign up FREE</h1>
-        <form class="sign-up-free">
+        <form id="sign-up-free" class="sign-up-free validate" novalidate>
             <div class="sign-row">
                 <label for="name-sign-up">Name</label>
-                <input type="text" name="name" maxlength="20" id="name-sign-up" class="txt" placeholder="Viktoria" required>
+                <input type="text" name="name" maxlength="20" class="validate[required]" id="name-sign-up" placeholder="Viktoria" required>
             </div>
             <div class="sign-row">
                 <label for="email-sign-up">Email</label>
-                <input type="email" name="email" maxlength="20" id="email-sign-up"  placeholder="Viktoria@gmail.com" required>
+                <input type="email" name="email" maxlength="20" class="validate[custom[email]]" id="email-sign-up"  placeholder="Viktoria@gmail.com" required>
             </div>
             <div class="sign-row">
                 <label for="password-sign-up">Your password</label>
-                <input type="password" name="email" maxlength="20" id="password-sign-up" class="txt" placeholder="Password" required>
+                <input type="password" name="email"  maxlength="20" class="validate[required]" id="password-sign-up"  placeholder="Password" required>
             </div>
             <div class="sign-row">
                 <label for="repeat-password-sign-up">Repeat password</label>
-                <input type="password" name="email" maxlength="20" id="repeat-password-sign-up" class="txt" placeholder="Repeat password" required>
+                <input type="password" name="email" maxlength="20" class="validate[required]" id="repeat-password-sign-up"  placeholder="Repeat password" required>
             </div>
             <div class="sign-row">
                 <ul>
@@ -1050,10 +1050,10 @@
         </div>
         <div class="login-registr">
             <h1>Login</h1>
-            <form class="login-form">
+            <form class="login-form validate" novalidate>
                 <div class="login-row">
                     <label for="email-login">Email</label>
-                    <input type="email" name="email" maxlength="20" id="email-login"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" name="email" maxlength="20" id="email-login" class="validate[custom[email]]" placeholder="Viktoria@gmail.com" required>
                 </div>
                 <div class="login-row">
                     <label for="password-login">Your password</label>
@@ -1073,10 +1073,10 @@
         <div class="forgot-password">
             <h1>Forgot password</h1>
             <p>If you forgot your password, enter your email and we will send you a new password</p>
-            <form class="forgot-form">
+            <form class="forgot-form validate" novalidate>
                 <div class="forgot-row">
                     <label for="email-forgot">Email</label>
-                    <input type="email" maxlength="20" name="email" id="email-forgot"  placeholder="Viktoria@gmail.com" required>
+                    <input type="email" maxlength="20" name="email" class="validate[custom[email]]" id="email-forgot"  placeholder="Viktoria@gmail.com" required>
                 </div>
                 <div class="sent-password">
                     <button type="submit" class="sent-password-button">Send password</button>
@@ -1222,6 +1222,11 @@
             scrollUpButtonClass: 'scroll-up1',
             scrollDownButtonClass: 'scroll-down1'
         });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".validate").validationEngine('attach');
     });
 </script>
 </body>
