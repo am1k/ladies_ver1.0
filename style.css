@@ -291,6 +291,9 @@ body {
     float: left;
     margin: 15px 0 0 15px;
 }
+.row input {
+    outline-color: #ee0101;
+}
 #registr-name {
     width: 185px;
     height: 30px;
@@ -2211,6 +2214,9 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
 .sign-row ul li:last-child {
     padding-left: 20px;
 }
+.sign-row input {
+    outline-color: #ee0101;
+}
 .content-girl-info {
     width: 322px;
     height: 550px;
@@ -2358,6 +2364,9 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
 }
 .login-form {
     font-family: pt_sansregular;
+}
+.login-row input {
+    outline-color: #ee0101;
 }
 .forgot-password {
     display: none;
