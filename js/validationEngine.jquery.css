@@ -219,10 +219,10 @@ body.rtl .formError .formErrorArrow {
     opacity: 1 !important;
 }
 .login-registr .formError {
-    margin-top: 7px !important;
-    left: 515px !important;
-    opacity: 1 !important;
-}
+     margin-top: 7px !important;
+     left: 515px !important;
+     opacity: 1 !important;
+ }
 .login-registr .formErrorContent:after {
     content: ' ';
     position: absolute;
@@ -236,5 +236,25 @@ body.rtl .formError .formErrorArrow {
     top: 25%;
 }
 .login-registr .formErrorContent:before {
+    display: none;
+}
+.forgot-password .formError {
+    margin-top: 7px !important;
+    left: 515px !important;
+    opacity: 1 !important;
+}
+.forgot-password .formErrorContent:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 7px solid #cc3333;
+    border-bottom: 7px solid transparent;
+    left: 100%;
+    top: 25%;
+}
+.forgot-password .formErrorContent:before {
     display: none;
 }
