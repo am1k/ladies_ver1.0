@@ -14,7 +14,7 @@ $(document).ready(function(){
         $('#start-chat-closed').show();
     });
 
-    $('.login-registr .forgot-password-button').click(function() {
+    $('.login-registr a.forgot-password-button').click(function() {
        $('.login-registr').hide();
        $('.forgot-password').show();
     });
