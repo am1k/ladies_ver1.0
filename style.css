@@ -2063,11 +2063,9 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     top: 40%;
     cursor: pointer;
 }
-.popup-content-license-agreement {
-
-}
-.popup-content-license-agreement p {
+#popup-content-license-agreement p {
     font-family: pt_sansregular;
+    width: 900px;
 }
 .popup-registration {
     display: none;
