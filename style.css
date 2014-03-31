@@ -649,6 +649,7 @@ body {
     position: absolute;
     z-index: 101;
     border-radius: 2px;
+    box-shadow: 0 2px 1px 0 #a2a2a2;
 }
 .content-ladies:hover {
     padding: 2px;
@@ -1259,6 +1260,7 @@ body {
     padding: 5px;
     border: 1px solid #c8d8df;
     float: left;
+    border-radius: 3px;
 
 }
 .about-girls h2 {
