@@ -968,7 +968,7 @@
         <p>Бесплатная регистрация для девушек. Заполните форму если вы хотите познакомится с иностранцем. Для женщин наши услуги бесплатные. </p>
         <p>Не утруждайте себя напрасным трудом, регистрируя данные на нашем сайте: прежде, чем разместить анкету новой клиентки, мы проверяем данные каждой женщины в программах анти-скам.</p>
     </div>
-    <form class="popup-form-registration-for-girl" novalidate>
+    <form class="popup-form-registration-for-girl validate" novalidate>
         <div class="popup-row">
             <label for="name-girl">Имя:</label>
             <input type="text" maxlength="20" name="name" class="validate[required]" id="name-girl" class="txt"  required>
@@ -983,7 +983,7 @@
         </div>
         <div class="popup-row-message">
             <label for="message-girl">Сообщение:</label>
-            <textarea name="message" id="message-girl" class="txtarea" required></textarea>
+            <textarea name="message" id="message-girl" class="validate[required]" required></textarea>
         </div>
         <button type="submit" class="popup-sent">Отправить</button>
         <div class="popup-row-file">
