@@ -187,7 +187,7 @@ body.rtl .formError .formErrorArrow {
     display: none;
 }
 .formError {
-    margin-top: 11px !important;
+    margin-top: 6px !important;
     left: 225px !important;
     opacity: 1 !important;
 }
@@ -214,7 +214,7 @@ body.rtl .formError .formErrorArrow {
     top: 25%;
 }
 .sign-up-free.validate .formError {
-    margin-top: 7px !important;
+    margin-top: 6px !important;
     left: 262px !important;
     opacity: 1 !important;
 }
@@ -239,7 +239,7 @@ body.rtl .formError .formErrorArrow {
     display: none;
 }
 .forgot-password .formError {
-    margin-top: 7px !important;
+    margin-top: 6px !important;
     left: 515px !important;
     opacity: 1 !important;
 }
