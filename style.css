@@ -1990,7 +1990,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     background: #f5f9fc;
     margin-top: 5px;
     outline-color: #cc3333;
-    line-height: 7px;
+    line-height: 10px;
 
 }
 .popup-row-mail {
@@ -2008,7 +2008,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     background: #f5f9fc;
     margin-top: 5px;
     outline-color: #cc3333;.
-    line-height: 7px;
+    line-height: 10px;
 }
 #theme-girl {
     display: block;
@@ -2019,7 +2019,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     background: #f5f9fc;
     margin-top: 5px;
     outline-color: #cc3333;
-    line-height: 7px;
+    line-height: 10px;
 }
 .popup-row-message {
     float: left;
@@ -2037,7 +2037,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     margin-top: 5px;
     resize: none;
     outline-color: #cc3333;
-    line-height: 7px;
+    line-height: 10px;
 }
 .popup-sent {
     float: left;
