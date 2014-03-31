@@ -315,6 +315,7 @@ body {
     font-family: pt_sansregular;
     font-style: italic;
     margin-top: 10px;
+    line-height: 30px;
 }
 #email-enter {
     width: 155px;
@@ -327,6 +328,7 @@ body {
     font-family: pt_sansregular;
     font-style: italic;
     margin-top: 10px;
+    line-height: 30px;
 }
 #email-registration {
     width: 155px;
@@ -339,6 +341,7 @@ body {
     font-family: pt_sansregular;
     font-style: italic;
     margin-top: 10px;
+    line-height: 30px;
 }
 .row label {
     font-family: pt_sansregular;
@@ -508,6 +511,7 @@ body {
     font-family: pt_sansregular;
     font-style: italic;
     margin-top: 10px;
+    line-height: 30px;
 }
 .row input {
     float: left;
@@ -1986,6 +1990,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     background: #f5f9fc;
     margin-top: 5px;
     outline-color: #cc3333;
+    line-height: 7px;
 
 }
 .popup-row-mail {
@@ -2002,7 +2007,8 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     border-radius: 2px;
     background: #f5f9fc;
     margin-top: 5px;
-    outline-color: #cc3333;
+    outline-color: #cc3333;.
+    line-height: 7px;
 }
 #theme-girl {
     display: block;
@@ -2013,6 +2019,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     background: #f5f9fc;
     margin-top: 5px;
     outline-color: #cc3333;
+    line-height: 7px;
 }
 .popup-row-message {
     float: left;
@@ -2030,6 +2037,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     margin-top: 5px;
     resize: none;
     outline-color: #cc3333;
+    line-height: 7px;
 }
 .popup-sent {
     float: left;
@@ -2163,6 +2171,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 #email-sign-up {
     display: block;
@@ -2178,6 +2187,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 #password-sign-up {
     display: block;
@@ -2193,6 +2203,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 #repeat-password-sign-up {
     display: block;
@@ -2208,6 +2219,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 .facebook-sign-up {
     float: left;
@@ -2370,6 +2382,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 #password-login {
     display: block;
@@ -2385,6 +2398,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 .register-login {
     float: left;
@@ -2479,6 +2493,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     margin-bottom: 10px;
     border: 1px solid #a7b4bb;
     box-shadow: 0 -1px 3px -2px;
+    line-height: 30px;
 }
 .sent-password-button {
     float: left;
