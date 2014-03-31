@@ -665,6 +665,7 @@ body {
 .ladies-image {
     overflow: hidden;
     width: 148px;
+    position: relative;
 }
 .webcam-icon {
     background: url("img/lady-members-web-cam.png");
@@ -912,9 +913,9 @@ body {
     background: url("img/happy-birthday-cake.png");
     height: 37px;
     width: 36px;
-    position: relative;
-    margin-top: -36px;
-    float: right;
+    position: absolute;
+    top: 83%;
+    right: 0;
 }
 .birthday-icon-hover {
     display: none;
