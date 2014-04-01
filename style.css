@@ -172,6 +172,7 @@ body {
     cursor: pointer;
     border: 1px solid #b3b3b3;
     border-bottom: 2px solid #b3b3b3;
+    border-top: 1px solid transparent;
     outline: none;
 }
 .rus {
@@ -187,6 +188,7 @@ body {
     cursor: pointer;
     border: 1px solid #b3b3b3;
     border-bottom: 2px solid #b3b3b3;
+    border-top: 1px solid transparent;
     outline: none
 }
 .rus.active {
@@ -670,16 +672,6 @@ body {
     overflow: hidden;
     width: 148px;
     position: relative;
-}
-@-moz-document url-prefix() {
-    .ladies-image {
-        margin-left: 1px;
-    }
-}
-@-moz-document url-prefix() {
-    .content-ladies:hover {
-        width: 148px;
-    }
 }
 .webcam-icon {
     background: url("img/lady-members-web-cam.png");
@@ -2766,6 +2758,19 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     font-size: 11px;
     font-family: PTsans;
 }
+/*    для формы валидации */
 .error {
     border: solid 2px #cc3333 !important;
+}
+/* хаки для FireFox */
+@-moz-document url-prefix() {
+    .ladies-image {
+        margin-left: 1px;
+    }
+    .content-ladies:hover {
+        width: 148px;
+    }
+    .ladies-border {
+        margin-left: 70px;
+    }
 }
