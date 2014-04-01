@@ -21,6 +21,7 @@
 }
 #bx-pager a img {
     position: relative;
+    z-index: -1;
 }
 #bx-pager a:before {
     content: ' ';
