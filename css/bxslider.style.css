@@ -19,10 +19,6 @@
     opacity: 0.6;
     box-shadow: 0 1px 5px 1px;
     position: relative;
-    z-index: -1;
-}
-#bx-pager a img {
-    z-index: -1;
 }
 #bx-pager a:before {
     content: ' ';
@@ -39,12 +35,6 @@
 }
 .active {
     opacity: 1 !important;
-}
-.carousel li img {
-    z-index: -1;
-}
-.bx-wrapper img {
-    z-index: -1;
 }
 .bx-wrapper .bx-viewport:after {
     content: ' ';
