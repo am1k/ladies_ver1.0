@@ -40,6 +40,9 @@
 .active {
     opacity: 1 !important;
 }
+.carousel li img {
+    z-index: -1;
+}
 .bx-wrapper img {
     z-index: -1;
 }
