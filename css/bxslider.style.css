@@ -36,7 +36,6 @@
 .active {
     opacity: 1 !important;
 }
-/*
 .bx-wrapper .bx-viewport:after {
     content: ' ';
     display: block;
@@ -48,4 +47,4 @@
     bottom: 0;
     left: 0;
     z-index: 101;
-}*/
+}
