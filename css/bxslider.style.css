@@ -35,9 +35,12 @@
 }
 #bx-pager a.active:before {
     display: none;
+    z-index: 101;
+    position: relative;
 }
 .active {
     opacity: 1 !important;
+
 }
 .bx-wrapper {
     position: relative;
