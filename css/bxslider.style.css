@@ -40,6 +40,9 @@
 .active {
     opacity: 1 !important;
 }
+.bx-wrapper img {
+    z-index: -1;
+}
 .bx-wrapper .bx-viewport:after {
     content: ' ';
     display: block;
