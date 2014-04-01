@@ -245,7 +245,7 @@ body {
     outline: none;
     cursor: pointer;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
 }
 .enter-registration.active {
     float: right;
@@ -441,7 +441,7 @@ body {
     color: #00ae99;
     margin: 21px 0 0 15px;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     cursor: pointer;
     outline: none;
 }
