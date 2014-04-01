@@ -18,6 +18,10 @@
     border-bottom: 3px solid #60f7ef;
     box-shadow: 0 1px 5px 1px;
 }
+#bx-pager a img {
+    position: relative;
+    z-index: -1;
+}
 #bx-pager a:before {
     content: ' ';
     display: block;
