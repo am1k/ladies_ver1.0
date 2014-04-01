@@ -37,7 +37,7 @@
     opacity: 1 !important;
 }
 .bx-wrapper .bx-viewport:after {
-    content: ' ';
+    content: '';
     display: block;
     position: absolute;
     width: 1000px;
