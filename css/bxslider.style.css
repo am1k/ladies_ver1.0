@@ -34,9 +34,7 @@
     z-index: 101;
 }
 #bx-pager a.active:before {
-    display: none;
-    z-index: 101;
-    position: relative;
+    background-image: none;
 }
 .active {
     opacity: 1 !important;
