@@ -2089,6 +2089,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     text-decoration: underline;
     margin-left: 3px;
 }
+/* ------------ popup license agreement -------*/
 .popup-license-agreement {
     display: none;
     width: 964px;
@@ -2122,6 +2123,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     font-family: pt_sansregular;
     width: 900px;
 }
+/* -------------------- popup registration ---------------------*/
 .popup-registration {
     display: none;
     width: 960px;
@@ -2621,7 +2623,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     font-family: pt_sansregular;
     margin: 20px 0 0 20px;
 }
-/* ---------------*/
+/* -------- фильтр возраста -------*/
 .age-filter {
     float: left;
     margin-top: 10px;
