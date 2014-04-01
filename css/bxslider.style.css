@@ -28,7 +28,6 @@
     background-repeat: repeat;
     width: 81px;
     height: 44px;
-    z-index: 101;
 }
 #bx-pager a.active:before {
     background: none;
