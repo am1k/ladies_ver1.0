@@ -38,6 +38,9 @@
 .active {
     opacity: 1 !important;
 }
+.bx-wrapper {
+    position: relative;
+}
 .bx-wrapper .bx-viewport:after {
     content: ' ';
     position: absolute;
