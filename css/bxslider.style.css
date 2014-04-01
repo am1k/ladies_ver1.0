@@ -22,7 +22,8 @@
 }
 #bx-pager a img {
     position: relative;
-    z-index: -1;
+    opacity: 1;
+    z-index: 1;
 }
 #bx-pager a:before {
     content: ' ';
