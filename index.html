@@ -1247,9 +1247,13 @@
 //            autoHideDelay: 3000,
 //            fadeDuration: 0.3
         });
+
+        $('form .validate').submit(function() {
+            $(this).validationEngine('validate');
+        })
     });
 </script>
-<script>
+<!--<script>
     $(document).ready(function(){
         $('body').click(function(){
            $('.validate').validationEngine('hide');
@@ -1260,6 +1264,6 @@
             e.preventDefault();
         })
     })
-</script>
+</script> -->
 <script src="js/my_scripts.js"></script>
 </body>
