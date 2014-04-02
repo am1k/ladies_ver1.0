@@ -1238,32 +1238,6 @@
         });
     });
 </script>
-<script>
-    $(document).ready(function(){
-        $(".validate").validationEngine({
-            promptPosition : "centerRight",
-            scroll: false,
-//            autoHidePrompt: true,
-//            autoHideDelay: 3000,
-//            fadeDuration: 0.3
-        });
-
-        $('form .validate').submit(function() {
-            $(this).validationEngine('validate');
-        })
-    });
-</script>
-<!--<script>
-    $(document).ready(function(){
-        $('body').click(function(){
-           $('.validate').validationEngine('hide');
-            $('#registr-name, #email-enter, #email-registration, #registr-password, #name-sign-up, #email-sign-up, #password-sign-up, #repeat-password-sign-up, #email-login, #password-login, #email-forgot').css('outline', 'none');
-        });
-        $(".validate").click(function(e) {
-            e.stopPropagation();
-            e.preventDefault();
-        })
-    })
-</script> -->
+<script src="js/my_validate.js"></script>
 <script src="js/my_scripts.js"></script>
 </body>
