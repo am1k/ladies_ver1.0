@@ -1242,11 +1242,19 @@
         $(".validate").validationEngine({
             promptPosition : "centerRight",
             scroll: false,
-            autoHidePrompt: true,
-            autoHideDelay: 3000,
-            fadeDuration: 0.3
+//            autoHidePrompt: true,
+//            autoHideDelay: 3000,
+//            fadeDuration: 0.3
         });
     });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".validate").click(function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+        })
+    })
 </script>
 <script src="js/my_scripts.js"></script>
 </body>
