@@ -71,10 +71,10 @@
                 </div>
 
                 <div class="row">
-                    <ul>
-                        <li><input type="checkbox" id="check"  checked><label for="check">I agree with</label></li>
-                        <li class="license-popup" rel="popup-license-agreement"><a href="javascript: void(0)">License agreement</a></li>
-                    </ul>
+                        <label><span class="checkbox">I agree with</span><input class="validate[required] checkbox" type="checkbox" id="agree" name="agree" checked></label>
+                        <ul>
+                            <li class="license-popup" rel="popup-license-agreement"><a href="javascript: void(0)">License agreement</a></li>
+                        </ul>
                 </div>
 
                     <button  class="facebook">Login with Facebook</button>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="row">
                     <ul>
-                        <li><input type="checkbox" id="check-igree" checked><label for="check-igree">Remember me</label></li>
+                        <li><label><span class="checkbox">Remember me</span><input class="validate[required] checkbox" type="checkbox" id="check-agree" name="check-agree" checked></label></li>
                     </ul>
                 </div>
                 <button  class="reg-facebook">Login with Facebook</button>
@@ -1041,7 +1041,7 @@
             </div>
             <div class="sign-row">
                 <ul>
-                    <li><input type="checkbox" id="check-sign-up" checked><label for="check-sign-up">I agree with</label></li>
+                    <li><label><input class="validate[required] checkbox" type="checkbox" id="sign-agree" name="sign-agree" checked><span class="checkbox">I agree with</span></label>
                     <li  class="license-popup-color" rel="popup-license-agreement"><a href="javascript: void(0)">License agreement</a></li>
                 </ul>
             </div>
@@ -1073,7 +1073,7 @@
                     <input type="password" name="password" maxlength="50" class="validate[required]" id="password-login"  placeholder="Password" required>
                 </div>
                 <div class="login-row">
-                    <input type="checkbox" id="remember-me" checked><label for="remember-me">Remember me</label>
+                    <label><input class="validate[required] checkbox" type="checkbox" id="forgot-check-agree" name="forgot-check-agree" checked><span class="checkbox">Remember me</span></label>
                 </div>
                 <div class="login-border-register">
                     <button type="submit" class="register-login">Login</button>
@@ -1239,7 +1239,7 @@
 </script>
 <script>
     $(document).ready(function(){
-        $(".validate").validationEngine('attach',{promptPosition : "centerRight", scroll: false});
+        $(".validate").validationEngine({promptPosition : "centerRight", scroll: false});
     });
 </script>
 <script src="js/my_scripts.js"></script>

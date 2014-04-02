@@ -8,7 +8,7 @@
                     "regex": "none",
                     "alertText": "This field is required",
                     "alertTextCheckboxMultiple": "* Please select an option",
-                    "alertTextCheckboxe": "* This checkbox is required",
+                    "alertTextCheckboxe": "This checkbox is required",
                     "alertTextDateRange": "* Both date range fields are required"
                 },
                 "requiredInFunction": { 
