@@ -1250,6 +1250,9 @@
 </script>
 <script>
     $(document).ready(function(){
+        $('body').click(function(){
+           $('.validate').validationEngine('hide');
+        });
         $(".validate").click(function(e) {
             e.stopPropagation();
             e.preventDefault();
