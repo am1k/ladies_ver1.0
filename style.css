@@ -1,4 +1,7 @@
+/*--------------    Сброс CSS -----------*/
 @import "reset.css";
+
+/* --------------- Подключение шрифтов -------------------*/
 @font-face {
     font-family: 'pt_sansbold';
     src: url('fonts/ptsans_bold_cyrillic/PTS75F-webfont.eot');
@@ -57,7 +60,7 @@ body {
     background-color: #fff;
     margin: 0 auto;
 }
-/* ----------------- HEADER -------------*/
+/* ----------------- HEADER (Шапка сайта) -------------*/
 #header {
     width: 1024px;
     height: 92px;
@@ -207,7 +210,7 @@ body {
     outline: none
 }
 
-/* ------ MAIN CONTENT ------*/
+/* ------ MAIN CONTENT (контент) ------*/
 #main-content {
     min-height: 100%;
     height: auto !important;
@@ -1582,7 +1585,7 @@ body {
     font-family: pt_sansregular;
 
 }
-/* ------------- FOOTER ---------------------*/
+/* ------------- FOOTER (Подвал) ---------------------*/
 #footer {
     height: 225px;
     width: 1024px;
@@ -1699,7 +1702,7 @@ body {
     text-decoration: underline;
     display: inline;
 }
-/* ----------------- Chat -----------------*/
+/* ----------------- Chat (чат) -----------------*/
 
 #start-chat-closed {
     width: 300px;
@@ -1926,7 +1929,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     margin: 12px 0 0 0;
     width: 130px;
 }
-/* --------- REGISTRATION FOR GIRL ----------------*/
+/* --------- REGISTRATION FOR GIRL (Регистрация для девушек) ----------------*/
 .popup-registration-for-girl {
     display: none;
     width: 710px;
@@ -2083,7 +2086,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     text-decoration: underline;
     margin-left: 3px;
 }
-/* ------------ popup license agreement -------*/
+/* ------------ Popup license agreement (Попап license agreement) -------*/
 .popup-license-agreement {
     display: none;
     width: 964px;
@@ -2117,7 +2120,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     font-family: pt_sansregular;
     width: 900px;
 }
-/* -------------------- popup registration ---------------------*/
+/* -------------------- Popup registration (Попап регистрации)  ---------------------*/
 .popup-registration {
     display: none;
     width: 960px;
@@ -2598,7 +2601,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     height: 13px;
     right: 100%;
 }
-/* -------------------- SCROLL for License agreement --------- */
+/* -------------------- SCROLL for License agreement (Скрол для прокрутки popup license agreement) --------- */
 #popup-content-license-agreement {
     overflow: auto;
     width: 932px !important;
@@ -2608,7 +2611,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     font-family: pt_sansregular;
     margin: 20px 0 0 20px;
 }
-/* -------- фильтр возраста -------*/
+/* -------- age-filter (Фильтр возраста) -------*/
 .age-filter {
     float: left;
     margin-top: 10px;
@@ -2745,7 +2748,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     font-size: 11px;
     font-family: PTsans;
 }
-/*    для формы валидации */
+/*   поле для формы валидации */
 .error {
     outline-color: #cc3333 !important;
     box-shadow: 0px 0px 2pt 2pt #cc3333 !important;
