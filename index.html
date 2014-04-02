@@ -1239,7 +1239,13 @@
 </script>
 <script>
     $(document).ready(function(){
-        $(".validate").validationEngine({promptPosition : "centerRight", scroll: false});
+        $(".validate").validationEngine({
+            promptPosition : "centerRight",
+            scroll: false,
+            autoHidePrompt: true,
+            autoHideDelay: 3000,
+            fadeDuration: 0.3
+        });
     });
 </script>
 <script src="js/my_scripts.js"></script>
