@@ -916,6 +916,46 @@ body {
     font-family: pt_sansbold;
     font-size: 13px;
 }
+.traveling-icon {
+    margin-top: 5px;
+    display: inline-block;
+    width: 155px;
+    height: 10px;
+}
+.traveling-icon p {
+    display: block;
+    background: url("img/lady-members-airplane.png");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 30px;
+    position: relative;
+    float: left;
+    padding-left: 25px;
+    font-family: pt_sansbold;
+    font-size: 13px;
+}
+.marriage-icon {
+    margin-top: 5px;
+    display: inline-block;
+    width: 155px;
+    height: 10px;
+}
+.marriage-icon p {
+    display: block;
+    background: url("img/lady-members-wedding.png");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    width: 20px;
+    height: 14px;
+    margin: 0 0 0 30px;
+    position: relative;
+    float: left;
+    padding-left: 25px;
+    font-family: pt_sansbold;
+    font-size: 13px;
+}
 .birthday-icon {
     background: url("img/happy-birthday-cake.png");
     height: 37px;
