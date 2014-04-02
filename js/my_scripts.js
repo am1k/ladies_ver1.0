@@ -32,6 +32,22 @@ $(function () {
 });
 $(function () {
     //script for popups
+    $('.license-popup-sign-up').click(function () {
+        $('div.'+$(this).attr("rel")).fadeIn(500);
+        $("body").append("<div id='license'></div>");
+        $('.popup-header-license-agreement').show();
+        $('#license').show().css({'filter' : 'alpha(opacity=80)'});
+        return false;
+    });
+    $('.license-close-icon').click(function () {
+        $(this).parent().fadeOut(100);
+        $('#license').remove();
+        $('.sign-up-license-agreement').hide();
+        return false;
+    });
+});
+$(function () {
+    //script for popups
     $('.license-popup-color').click(function () {
         $('div.'+$(this).attr("rel")).fadeIn(500);
         $('.popup-header-license-agreement').show();

@@ -29,16 +29,27 @@ color:#cc0000;
 
 /**********All styles popup**********/
 .popup {
-position:fixed;
-top:70px;
-left:50%;
-display:none;
-overflow:hidden;
-border:1px solid #ccc;
-background:#fff;
-z-index: 103;
+    position:fixed;
+    top:70px;
+    left:50%;
+    display:none;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index: 103;
 }
 .popup-license {
+    position:fixed;
+    top:70px;
+    left:50%;
+    display:none;
+    margin: 0 0 0 -497px;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    z-index: 104;
+}
+.sign-up-license {
     position:fixed;
     top:670px;
     left:50%;
@@ -60,15 +71,15 @@ z-index: 103;
 }
 /**********overlay styles**********/
 #overlay {
-width:100%;
-height:100%;
-position:fixed;
-top:0;
-left:0;
-display:none;
-background:#000;
-opacity:.8;
-z-index: 102;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    background:#000;
+    opacity:.8;
+    z-index: 102;
 }
 #license {
     width:100%;
@@ -81,3 +92,4 @@ z-index: 102;
     opacity:.8;
     z-index: 102;
 }
+

@@ -2156,7 +2156,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYA
     top: 40%;
     cursor: pointer;
 }
-#popup-content-license-agreement p {
+.popup-content-license-agreement p {
     font-family: pt_sansregular;
     width: 900px;
 }
@@ -2642,7 +2642,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAkCAIA
     right: 100%;
 }
 /* -------------------- SCROLL for License agreement (Скрол для прокрутки popup license agreement) --------- */
-#popup-content-license-agreement {
+.popup-content-license-agreement {
     overflow: auto;
     width: 932px !important;
     height: 233px;

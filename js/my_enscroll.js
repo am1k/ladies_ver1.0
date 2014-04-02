@@ -1,5 +1,5 @@
 $(document).ready(function(){
-        $('#popup-content-license-agreement').enscroll({
+        $('.popup-content-license-agreement').enscroll({
             verticalTrackClass: 'track1',
             verticalHandleClass: 'handle1',
             drawScrollButtons: true,
