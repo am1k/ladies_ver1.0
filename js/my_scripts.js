@@ -59,19 +59,3 @@ $(function () {
         return false;
     });
 });
-
-//Registration validation
-
-$(function() {
-
-    $.validationEngine.defaults.onFieldFailure = function(field){
-        field.addClass('error');
-    };
-
-    $.validationEngine.defaults.onFieldSuccess = function(field){
-        if( field.hasClass('error') ) {
-            field.removeClass('error');
-        }
-    };
-
-});

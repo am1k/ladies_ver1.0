@@ -2,15 +2,21 @@ $(document).ready(function() {
     $('.validate').validationEngine({
         promptPosition: "centerRight",
         scroll: false,
-        autoHidePrompt: true,
-        autoHideDelay: 3000,
-        fadeDuration: 0.3
+        onFieldFailure: function(field){
+            field.addClass('error');
+        },
+        onFieldSuccess: function(field){
+            if( field.hasClass('error') ) {
+                field.removeClass('error');
+            }
+        }
     });
-    $('form .validate').submit(function() {
-        $(this).validationEngine('validate');
-    });
+
     $('body').click(function() {
         $('.validate').validationEngine('hide');
+        $('.validate input.error').each(function() {
+            $(this).removeClass('error');
+        });
     });
     $('.validate input[type!=checkbox]').click(function(e) {
         e.stopPropagation();
