@@ -30,7 +30,7 @@ color:#cc0000;
 /**********All styles popup**********/
 .popup {
 position:fixed;
-top:100px;
+top:70px;
 left:50%;
 display:none;
 overflow:hidden;
@@ -40,9 +40,10 @@ z-index: 103;
 }
 .popup-license {
     position:fixed;
-    top:100px;
-    left:23%;
+    top:670px;
+    left:50%;
     display:none;
+    margin: 0 0 0 -497px;
     overflow:hidden;
     border:1px solid #ccc;
     background:#fff;
