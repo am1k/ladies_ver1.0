@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('body').click(function() {
         $('.validate').validationEngine('hide');
     });
-    $('.validate input').click(function(e) {
+    $('.validate input[type!=checkbox]').click(function(e) {
         e.stopPropagation();
         e.preventDefault();
     });
